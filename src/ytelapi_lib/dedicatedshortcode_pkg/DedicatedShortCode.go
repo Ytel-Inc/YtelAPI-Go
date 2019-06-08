@@ -6,7 +6,7 @@
 
 package dedicatedshortcode_pkg
 
-import "ytelapi_lib/configuration_pkg"
+import "github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
 
 /*
  * Interface for the DEDICATEDSHORTCODE_IMPL
@@ -24,7 +24,7 @@ type DEDICATEDSHORTCODE interface {
 
     CreateSendSMS (int64, float64, string, *string, *string) (string, error)
 
-    CreateViewSMS (string) (string, error)
+// DUPLICATE    CreateViewSMS (string) (string, error)
 }
 
 /*

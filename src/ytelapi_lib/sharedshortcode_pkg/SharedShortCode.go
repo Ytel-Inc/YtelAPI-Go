@@ -6,7 +6,10 @@
 
 package sharedshortcode_pkg
 
-import "ytelapi_lib/configuration_pkg"
+import (
+	"github.com/satori/go.uuid"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
+)
 
 /*
  * Interface for the SHAREDSHORTCODE_IMPL

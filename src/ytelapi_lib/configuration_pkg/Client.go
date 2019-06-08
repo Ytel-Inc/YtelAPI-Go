@@ -6,7 +6,6 @@
 
 package configuration_pkg
 
-)
 /** The base Uri for API calls */
 const BASEURI string = "https://api.ytel.com/api/v3"
 

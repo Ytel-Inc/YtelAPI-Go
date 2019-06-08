@@ -8,11 +8,10 @@ package conference_pkg
 
 
 import(
-	"fmt"
-	"ytelapi_lib/models_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/models_pkg"
 	"github.com/apimatic/unirest-go"
-	"ytelapi_lib/apihelper_pkg"
-	"ytelapi_lib/configuration_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/apihelper_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
 )
 /*
  * Client structure as interface implementation
@@ -68,7 +67,7 @@ func (me *CONFERENCE_IMPL) CreateListConferences (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -137,7 +136,7 @@ func (me *CONFERENCE_IMPL) CreateHangupParticipant (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -201,7 +200,7 @@ func (me *CONFERENCE_IMPL) CreatePlayAudio (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -271,7 +270,7 @@ func (me *CONFERENCE_IMPL) CreateListParticipants (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -373,7 +372,7 @@ func (me *CONFERENCE_IMPL) CreateConference (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -434,7 +433,7 @@ func (me *CONFERENCE_IMPL) CreateViewParticipant (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -492,7 +491,7 @@ func (me *CONFERENCE_IMPL) CreateViewConference (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -559,7 +558,7 @@ func (me *CONFERENCE_IMPL) AddParticipant (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -626,7 +625,7 @@ func (me *CONFERENCE_IMPL) CreateSilenceParticipant (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err

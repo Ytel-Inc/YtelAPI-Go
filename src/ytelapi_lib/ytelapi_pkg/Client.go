@@ -7,20 +7,20 @@
 package YtelAPIClient
 
 import(
-	"ytelapi_lib/configuration_pkg"
-	"ytelapi_lib/usage_pkg"
-	"ytelapi_lib/subaccount_pkg"
-	"ytelapi_lib/account_pkg"
-	"ytelapi_lib/email_pkg"
-	"ytelapi_lib/recording_pkg"
-	"ytelapi_lib/transcription_pkg"
-	"ytelapi_lib/conference_pkg"
-	"ytelapi_lib/phonenumber_pkg"
-	"ytelapi_lib/carrier_pkg"
-	"ytelapi_lib/dedicatedshortcode_pkg"
-	"ytelapi_lib/sharedshortcode_pkg"
-	"ytelapi_lib/sms_pkg"
-	"ytelapi_lib/voice_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/usage_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/subaccount_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/account_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/email_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/recording_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/transcription_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/conference_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/phonenumber_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/carrier_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/dedicatedshortcode_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/sharedshortcode_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/sms_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/voice_pkg"
 )
 /*
  * Client structure as interface implementation
