@@ -8,11 +8,10 @@ package phonenumber_pkg
 
 
 import(
-	"fmt"
-	"ytelapi_lib/models_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/models_pkg"
 	"github.com/apimatic/unirest-go"
-	"ytelapi_lib/apihelper_pkg"
-	"ytelapi_lib/configuration_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/apihelper_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
 )
 /*
  * Client structure as interface implementation
@@ -68,7 +67,7 @@ func (me *PHONENUMBER_IMPL) CreateBulkBuyNumbers (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -165,7 +164,7 @@ func (me *PHONENUMBER_IMPL) CreateBulkUpdateNumbers (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -229,7 +228,7 @@ func (me *PHONENUMBER_IMPL) CreateMoveNumber (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -296,7 +295,7 @@ func (me *PHONENUMBER_IMPL) CreateListNumbers (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -393,7 +392,7 @@ func (me *PHONENUMBER_IMPL) UpdateNumber (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -451,7 +450,7 @@ func (me *PHONENUMBER_IMPL) CreateViewDetails (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -509,7 +508,7 @@ func (me *PHONENUMBER_IMPL) CreateReleaseNumber (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -567,7 +566,7 @@ func (me *PHONENUMBER_IMPL) CreatePurchaseNumber (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -625,7 +624,7 @@ func (me *PHONENUMBER_IMPL) CreateGetDIDScore (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -689,7 +688,7 @@ func (me *PHONENUMBER_IMPL) CreateAvailableNumbers (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -747,7 +746,7 @@ func (me *PHONENUMBER_IMPL) CreateBulkRelease (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err

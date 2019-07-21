@@ -8,10 +8,9 @@ package carrier_pkg
 
 
 import(
-	"fmt"
 	"github.com/apimatic/unirest-go"
-	"ytelapi_lib/apihelper_pkg"
-	"ytelapi_lib/configuration_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/apihelper_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
 )
 /*
  * Client structure as interface implementation
@@ -58,7 +57,7 @@ func (me *CARRIER_IMPL) CreateLookupCarrier (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -119,7 +118,7 @@ func (me *CARRIER_IMPL) CreateCarrierResults (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err

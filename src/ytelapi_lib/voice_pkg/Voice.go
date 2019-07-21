@@ -6,8 +6,8 @@
 
 package voice_pkg
 
-import "ytelapi_lib/models_pkg"
-import "ytelapi_lib/configuration_pkg"
+import "github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/models_pkg"
+import "github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
 
 /*
  * Interface for the VOICE_IMPL

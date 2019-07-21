@@ -8,11 +8,10 @@ package email_pkg
 
 
 import(
-	"fmt"
-	"ytelapi_lib/models_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/models_pkg"
 	"github.com/apimatic/unirest-go"
-	"ytelapi_lib/apihelper_pkg"
-	"ytelapi_lib/configuration_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/apihelper_pkg"
+	"github.com/Ytel-Inc/YtelAPI-Go/src/ytelapi_lib/configuration_pkg"
 )
 /*
  * Client structure as interface implementation
@@ -62,7 +61,7 @@ func (me *EMAIL_IMPL) CreateBlockedEmails (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -120,7 +119,7 @@ func (me *EMAIL_IMPL) CreateRemoveInvalidEmail (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -181,7 +180,7 @@ func (me *EMAIL_IMPL) CreateInvalidEmails (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -239,7 +238,7 @@ func (me *EMAIL_IMPL) CreateRemoveBouncedEmail (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -300,7 +299,7 @@ func (me *EMAIL_IMPL) CreateBouncedEmails (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -361,7 +360,7 @@ func (me *EMAIL_IMPL) CreateSpamEmails (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -440,7 +439,7 @@ func (me *EMAIL_IMPL) CreateSendEmail (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -498,7 +497,7 @@ func (me *EMAIL_IMPL) CreateRemoveBlockedAddress (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -556,7 +555,7 @@ func (me *EMAIL_IMPL) AddEmailUnsubscribe (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -614,7 +613,7 @@ func (me *EMAIL_IMPL) CreateRemoveUnsubscribedEmail (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -675,7 +674,7 @@ func (me *EMAIL_IMPL) CreateListUnsubscribedEmails (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
@@ -733,7 +732,7 @@ func (me *EMAIL_IMPL) CreateRemoveSpamAddress (
     //prepare API request
     _request := unirest.PostWithAuth(_queryBuilder, headers, parameters, me.config.BasicAuthUserName(), me.config.BasicAuthPassword())
     //and invoke the API call request to fetch the response
-    _response, err := unirest.AsString(_request);
+    _response, err := unirest.AsString(_request, false);
     if err != nil {
         //error in API invocation
         return "", err
